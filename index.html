@@ -18,15 +18,8 @@
                 <p id="subtitulo"><strong>Uma lista de tarefas desenvolvida por Nesser Andrade</strong></p>
             </header>
             <label for="inputDados">Adicione uma tarefa</label>
-            <input type="text" id="inputDados" name="inputDados"></input><button id="botaoAdicionar">+</button>
+            <input type="text" id="inputDados" name="inputDados" placeholder="ex. lavar a louça"></input><button id="botaoAdicionar" onclick="addTarefa()">+</button>
             <ul id="lista">
-                <li>
-                    <div class="divResultado"><input type="checkbox" class="checkbox"></input>
-                    <p>git reflog  (ver as versoes do codigo)
-                        git reset --hard iddaversao  (voltar para outra versao do codigo)
-                        git branch (mostra as branchs do codigo)
-                        git branch nome (cria uma nova branch)</p><button class="botaoTarefa">X</button></div>
-                </li>
             </ul>
             <script src="script.js"></script>
         </main>

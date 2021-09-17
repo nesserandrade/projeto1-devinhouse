@@ -6,37 +6,9 @@ body {
 }
 
 label {
-    font-size: 20pt;
-    font-family: fantasy;
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(111, 150, 32);
-}
-
-.divResultado {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
- 
-#botaoAdicionar {
-    text-align: center;
-    font-size: 20pt;
-    background-color: rgb(163, 224, 40);
-    float: right;
-    min-width: 50px;
-    height: 50px;
-    padding: 10px;
-    border-radius: 3px;
-    vertical-align: auto;
-    cursor: pointer;
-}
-
-#inputDados {
-    display: inline;
-    padding: 17px 5px 17px 15px;
-    width: 85%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: white;
-    border-radius: 5px;
 }
 
 input {
@@ -44,24 +16,42 @@ input {
     margin-right: 10px;
 }
 
-#titulo {
-    font-style: oblique;
-    font-size: 45pt;
-    font-family: fantasy;
-    margin-bottom: 0;
-}
-
-#subtitulo {
-    font-family: fantasy;
-    font-size: 15pt;
+li {
     width: 100%;
-    color: gray;
-    text-align: center;
+    margin: 2px;
+    padding: 2px 0;
+    justify-content: space-between;
+    border-bottom: 1pt dotted grey;
 }
 
-.checkbox {
-    width: 20px;
-    height: 20px;
+.entrada {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    font-size: 15pt;
+    text-align: justify;
+    margin-left: 0;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.botaoTarefa {
+    background-image: linear-gradient(to bottom, rgb(115, 153, 38),rgb(50, 73, 3));
+    min-width: 50px;
+    height: 50px;
+    margin-right: 3px;
+    margin-left: 5px;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .container {
@@ -76,45 +66,62 @@ input {
     border-radius: 10px;
   }
 
-li {
-    width: 100%;
-    margin: 2px;
-    padding: 2px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.divResultado {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.marcado {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
 }
 
 #inputDados {
     margin-bottom: 10px;
+    display: flex;
+    flex-shrink: 1;
 }
 
-p {
-    color: rgba(0, 0, 0, 0.815);
-    font-family: fantasy;
-    width: 85%;
-    font-size: 12pt;
-    text-align: justify;
-    margin-left: 5px;
-    word-wrap: break-word;
-    font-weight: bold;
-}
-
-ul {
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-}
-
-.botaoTarefa {
-    background-color: rgb(115, 153, 38);
+#botaoAdicionar {
+    display: flex;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20pt;
+    background-image: linear-gradient(to bottom, rgb(163, 224, 40),rgb(115, 153, 38));
+    float: right;
     min-width: 50px;
     height: 50px;
-    margin-right: 3px;
-    margin-left: 5px;
-    padding: 10px 0;
-    border-radius: 3px;
-    color: black;
-    font-size: 1.5rem;
+    padding: 10px;
     cursor: pointer;
+}
+
+#inputDados {
+    display: inline;
+    padding: 17px 5px 17px 15px;
+    width: 85%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+}
+
+#titulo {
+    font-style: oblique;
+    font-size: 45pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+
+#subtitulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    margin-bottom: 15px;
+    width: 100%;
+    color: gray;
+    text-align: center;
 }
