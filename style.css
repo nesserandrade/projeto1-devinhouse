@@ -24,6 +24,11 @@ li {
     border-bottom: 1pt dotted grey;
 }
 
+li:hover {
+    transition: all .5s ease;
+    background-color: rgb(163, 224, 40)
+}
+
 .entrada {
     font-family: Arial, Helvetica, sans-serif;
     width: 80%;

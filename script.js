@@ -49,7 +49,6 @@ function checkEvento(evento) {
     salvarLista()
 }
 
-
 function deletarTarefa(apagar) {
     let apagarConfirma = confirm("Deseja apagar a tarefa?")
     if (apagarConfirma) {
