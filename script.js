@@ -8,8 +8,7 @@ function carregarLista() {
         resultado.innerHTML = carregaLista
     let riscado = document.querySelectorAll(".marcado")
     for (const item of riscado) {
-        item.parentElement.children[0].checked = true;
-        item.parentElement.children[0].addEventListener("change", checkEvento)
+        item.parentElement.children[0].checked = true
     }
     let eventoCarregar = document.querySelectorAll(".checkbox")
     for (const item of eventoCarregar) {
