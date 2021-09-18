@@ -21,7 +21,7 @@ function carregarLista() {
 function addTarefa () {
     let dadosValor = dados.value.trim()
     if (dadosValor.length === 0) {
-        alert("Digite a tarefa!")
+        alert("Digite uma tarefa!")
     }
     else {
         let li = document.createElement("li")
