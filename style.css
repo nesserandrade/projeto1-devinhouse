@@ -94,15 +94,15 @@ ul {
 }
 
 #botaoAdicionar {
-    display: flex;
     border-radius: 10px;
     text-align: center;
+    vertical-align: middle;
     font-size: 20pt;
     background-image: linear-gradient(to bottom, rgb(163, 224, 40),rgb(115, 153, 38));
     float: right;
     min-width: 50px;
     height: 50px;
-    padding: 10px;
+    padding: 0;
     cursor: pointer;
 }
 
