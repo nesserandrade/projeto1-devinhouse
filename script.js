@@ -6,6 +6,11 @@ function carregarLista() {
     let carregaLista = localStorage.getItem("listadetarefas")
     if (carregaLista) {
         resultado.innerHTML = carregaLista
+    let riscado = document.querySelectorAll(".marcado");
+    for (const item of riscado) {
+        item.parentElement.children[0].checked = true;
+        item.parentElement.children[0];addEventListener("change", checkEvento);
+    }
     }
 }
 
