@@ -2,21 +2,6 @@ let dados = document.querySelector("#inputDados")
 let resultado = document.querySelector("#lista")
 dados.focus()
 
-function carregarLista() {
-    let carregaLista = localStorage.getItem("listadetarefas")
-    if (carregaLista) {
-        resultado.innerHTML = carregaLista
-    let riscado = document.querySelectorAll(".marcado")
-    for (const item of riscado) {
-        item.parentElement.children[0].checked = true
-    }
-    let eventoCarregar = document.querySelectorAll(".checkbox")
-    for (const item of eventoCarregar) {
-        item.parentElement.children[0].addEventListener("change", checkEvento)
-    }
-    }
-}
-
 function addTarefa () {
     let dadosValor = dados.value.trim()
     if (dadosValor.length === 0) {
@@ -29,7 +14,7 @@ function addTarefa () {
         let input = document.createElement("input")
         input.className = "checkbox"
         input.type = "checkbox"
-        input.addEventListener("change", checkEvento)
+        input.addEventListener("change", marcarTarefa)
         let p = document.createElement("p")
         p.className = "entrada"
         let botao = document.createElement("button")
@@ -47,7 +32,7 @@ function addTarefa () {
     }
 }
 
-function checkEvento(evento) {
+function marcarTarefa(evento) {
     const paragrafo = evento.target.parentElement.children[1]
     if (evento.target.checked) {
         paragrafo.classList.add("marcado")
@@ -67,6 +52,21 @@ function deletarTarefa(apagar) {
 
 function salvarLista() {
     localStorage.setItem('listadetarefas', resultado.innerHTML)
+}
+
+function carregarLista() {
+    let carregaLista = localStorage.getItem("listadetarefas")
+    if (carregaLista) {
+        resultado.innerHTML = carregaLista
+    let riscado = document.querySelectorAll(".marcado")
+    for (const item of riscado) {
+        item.parentElement.children[0].checked = true
+    }
+    let eventoCarregar = document.querySelectorAll(".checkbox")
+    for (const item of eventoCarregar) {
+        item.parentElement.children[0].addEventListener("change", marcarTarefa)
+    }
+    }
 }
 
 carregarLista()
