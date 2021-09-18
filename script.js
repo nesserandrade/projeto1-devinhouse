@@ -28,6 +28,7 @@ function addTarefa () {
         let item = document.createTextNode(dadosValor)
         p.appendChild(item)
         resultado.appendChild(li)
+        dados.value = ""
         salvarLista()
     }
 }
