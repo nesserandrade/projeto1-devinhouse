@@ -52,12 +52,12 @@ ul {
 }
 
 .container {
-    width: 50%;
+    width: 52%;
     min-height: 100%;
     margin: auto;
-    padding: 22px;
+    padding: 36px;
     background-color: rgb(228, 247, 188);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     height: 100%;
     border-radius: 10px;
@@ -92,7 +92,7 @@ ul {
     font-size: 20pt;
     background-image: linear-gradient(to bottom, rgb(163, 224, 40),rgb(115, 153, 38));
     float: right;
-    min-width: 50px;
+    min-width: 51px;
     height: 50px;
     padding: 0;
     cursor: pointer;
@@ -105,6 +105,11 @@ ul {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 5px;
+}
+
+#divInput {
+    display: flex;
+    justify-content: space-between;
 }
 
 #titulo {
