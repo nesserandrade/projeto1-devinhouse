@@ -6,10 +6,14 @@ function carregarLista() {
     let carregaLista = localStorage.getItem("listadetarefas")
     if (carregaLista) {
         resultado.innerHTML = carregaLista
-    let riscado = document.querySelectorAll(".marcado");
+    let riscado = document.querySelectorAll(".marcado")
     for (const item of riscado) {
         item.parentElement.children[0].checked = true;
-        item.parentElement.children[0];addEventListener("change", checkEvento);
+        item.parentElement.children[0].addEventListener("change", checkEvento)
+    }
+    let eventoCarregar = document.querySelectorAll(".checkbox")
+    for (const item of eventoCarregar) {
+        item.parentElement.children[0].addEventListener("change", checkEvento)
     }
     }
 }
