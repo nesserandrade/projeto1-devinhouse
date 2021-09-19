@@ -43,10 +43,10 @@ function marcarTarefa(evento) {
     salvarLista()
 }
 
-function deletarTarefa(apagar) {
+function deletarTarefa(evento) {
     let apagarConfirma = confirm("Deseja apagar a tarefa?")
     if (apagarConfirma) {
-        apagar.parentNode.parentNode.parentNode.removeChild(apagar.parentNode.parentNode)
+        evento.parentNode.parentNode.parentNode.removeChild(evento.parentNode.parentNode)
         salvarLista()
     }
 }
